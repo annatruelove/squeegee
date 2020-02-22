@@ -1,15 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Button from 'react-bootstrap/Button';
 import '../App.css';
 import '../custom.scss';
-import squeegee from '../squeegee.png'
+import { NavLink } from 'react-router-dom';
 
-
-export default class App extends Component {
-    render() {
-        return (
-            <div>
-                <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav-bar">
+const Welcome = () => {    
+        return ( 
+          <NavLink to="/details">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav-bar">
                     <p class="navbar-brand" id="p">Squeegee</p>
                     <form class="form-inline my-2 my-lg-0" >
                         <input class="form-control mr-sm-2" id="welcome-search" type="search" placeholder="Search Jobs or Companies" aria-label="Search"></input>
@@ -19,12 +17,11 @@ export default class App extends Component {
 
                 <p>Welcome to Squeegee!</p>
                 <img src={squeegee}></img>
-                <Button className='btn-flat'>
-                    Hello
-                </Button>
-
-            </div>
+            <Button className='btn-flat'>
+              Hello
+            </Button>
+          </NavLink>
         );
-    }
+      }
 
-}
+export default Welcome;

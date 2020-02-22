@@ -1,14 +1,19 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import './custom.scss';
 import Welcome from './screens/Welcome';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Details from './screens/Details';
 
-class App extends Component {
-  render() {
+const App = () => {
     return (      
-        <Welcome />
+      <BrowserRouter>
+        <Switch>
+          <Route path="/" component={ Welcome } exact/>
+          <Route path='/details' component={ Details } />
+        </Switch>
+      </BrowserRouter> 
     );
-  }
 }
 
 export default App;
