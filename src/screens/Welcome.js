@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import '../App.css';
 import '../custom.scss';
 import { NavLink } from 'react-router-dom';
+import squeegee from '../squeegee.png';
 
 const Welcome = () => {    
         return ( 
