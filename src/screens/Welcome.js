@@ -1,14 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Button from 'react-bootstrap/Button';
 import '../App.css';
+import { NavLink } from 'react-router-dom';
 
-export default class App extends Component {    
-    render() {
-        return (      
+const Welcome = () => {    
+        return ( 
+          <NavLink to="/details">
             <Button className='btn-flat'>
               Hello
             </Button>
+          </NavLink>
         );
       }
-    
-  }
+
+export default Welcome;
