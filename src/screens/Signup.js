@@ -2,6 +2,7 @@ import React from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Navigation from './Navigation';
+import { NavLink } from 'react-router-dom';
 import '../App.css';
 
 const Signup = () => {    
@@ -21,9 +22,11 @@ const Signup = () => {
                 <Form.Label>Birthday</Form.Label>
                 <Form.Control type="date"/> 
             </Form.Group>
-            <Button variant="primary" type="submit">
-                Submit
-            </Button>
+            <NavLink to="/details">
+                <Button variant="primary" type="submit">
+                    Submit
+                </Button>
+            </NavLink>
         </Form>
         </>
     );
