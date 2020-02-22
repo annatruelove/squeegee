@@ -18,6 +18,22 @@ $theme-colors: (
     align-content: right;
 }
 
+#home-logo {
+    width: 8%;
+}
+
+.home {
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+#row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
 #welc-btn {
     border-color: white;
     background-color: #f7a9a0;

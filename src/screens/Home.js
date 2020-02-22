@@ -3,25 +3,32 @@ import Button from 'react-bootstrap/Button';
 import '../App.css';
 import '../custom.scss';
 import { NavLink } from 'react-router-dom';
-import squeegee from '../squeegee.png';
-import profile_icon from '../profile.svg';
-import search_icon from '../search.svg';
+import Navigation from './Navigation';
+import company_icon from '../company.svg';
+import job_icon from '../job.svg';
+import budget_icon from '../budget.svg';
 
 const Home = () => {
     return (
         <div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav-bar">
-                <img src={squeegee} alt="logo" id="nav-logo"></img>
-                <img src={search_icon} alt="logo" id="nav-logo"></img>
-                <form class="form-inline my-2 my-lg-0" >
-                    <input class="form-control mr-sm-2" id="welcome-search" type="search" placeholder="Search Jobs or Companies" aria-label="Search"></input>
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-                <img src={profile_icon} alt="logo" id="nav-logo"></img>
+            <Navigation />
 
-            </nav>
-
+            <div class="home">
+                <div id="row">
+                    <img src={company_icon} alt="logo" id="home-logo"></img>
+                    <p>Companies</p>
+                </div>
+                <div id="row">
+                    <img src={job_icon} alt="logo" id="home-logo"></img>
+                    <p>Jobs</p>
+                </div>
+                <div id="row">
+                    <img src={budget_icon} alt="logo" id="home-logo"></img>
+                    <p>Budget</p>
+                </div>
+            </div>
         </div>
+
     );
 }
 
