@@ -1,10 +1,13 @@
 import React from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import Navigation from './Navigation';
 import '../App.css';
 
 const Signup = () => {    
-    return (      
+    return (    
+        <>  
+        <Navigation />
         <Form>
             <Form.Group controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
@@ -22,6 +25,7 @@ const Signup = () => {
                 Submit
             </Button>
         </Form>
+        </>
     );
     
     
