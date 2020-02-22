@@ -12,7 +12,7 @@ const Welcome = () => {
 
           <p>Welcome to Squeegee!</p>
 
-
+          
               <div class="welcome">
               <NavLink to="/signup">
                   <Button className='btn-flat' id="welc-btn">
