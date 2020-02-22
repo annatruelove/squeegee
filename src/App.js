@@ -6,13 +6,15 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Details from './screens/Details';
 
 const App = () => {
-    return (      
+    return (   
+      <>   
       <BrowserRouter>
         <Switch>
           <Route path="/" component={ Welcome } exact/>
           <Route path='/details' component={ Details } />
         </Switch>
       </BrowserRouter> 
+      </>
     );
 }
 
