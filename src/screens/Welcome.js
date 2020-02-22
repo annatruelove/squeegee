@@ -1,14 +1,30 @@
 import React, { Component } from 'react';
 import Button from 'react-bootstrap/Button';
 import '../App.css';
+import '../custom.scss';
+import squeegee from '../squeegee.png'
 
-export default class App extends Component {    
+
+export default class App extends Component {
     render() {
-        return (      
-            <Button className='btn-flat'>
-              Hello
-            </Button>
+        return (
+            <div>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav-bar">
+                    <p class="navbar-brand" id="p">Squeegee</p>
+                    <form class="form-inline my-2 my-lg-0" >
+                        <input class="form-control mr-sm-2" id="welcome-search" type="search" placeholder="Search Jobs or Companies" aria-label="Search"></input>
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </nav>
+
+                <p>Welcome to Squeegee!</p>
+                <img src={squeegee}></img>
+                <Button className='btn-flat'>
+                    Hello
+                </Button>
+
+            </div>
         );
-      }
-    
-  }
+    }
+
+}

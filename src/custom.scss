@@ -1,7 +1,20 @@
 // Override default variables before the import
 $theme-colors: (
-    'primary': #000
+    'primary': purple
 );
+
+#nav-bar {
+    display: flex;
+    justify-content: center;
+}
+
+#p {
+    align-self: right;
+}
+
+#welcome-search {
+    width: 300px;
+}
 
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';
