@@ -14,7 +14,7 @@ const Welcome = () => {
             <br></br>
             <div>
             <h1>Welcome to Squeegee.</h1>
-            <h3>Your one stop shop for everything internship and entry-level. </h3>
+            <h3>Your one-stop shop for everything internship and entry-level. </h3>
             <p>Find company reviews, program experiences, interview tips, pay ranges, budgeting tips, and more from fellow young adults. No paywall, <br/>no executive reviews, no BS. </p>
             </div>
               <div>
