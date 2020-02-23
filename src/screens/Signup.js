@@ -39,20 +39,20 @@ const Signup = () => {
             <Form.Group controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
             <Form.Control type="email" placeholder="Enter email" onChange={e => setEmail(e.target.value)}/>
-            <Form.Text>We'll never share your email with anyone else. </Form.Text>
+            <Form.Text className="text-muted">We'll never share your email with anyone else. </Form.Text>
             </Form.Group>
             <Form.Group controlId="formBasicPassword">
                 <Form.Label>Password</Form.Label>
                 <Form.Control type="password" placeholder="Password" onChange={e => setPassword(e.target.value)}/>
-                <Form.Text>You'll use this to log back in. </Form.Text>
+                <Form.Text className="text-muted">You'll use this to log back in. </Form.Text>
             </Form.Group>
             <Form.Group controlId="formBirthday">
                 <Form.Label>Birthday</Form.Label>
                 <Form.Control type="date"/> 
-                <Form.Text>We need this to verify your submissions.</Form.Text>
+                <Form.Text className="text-muted">We need this to verify your submissions.</Form.Text>
             </Form.Group>
             
-                <Button variant="primary" type="submit">
+                <Button variant="primary" id="submit-button" type="submit">
                     Submit
                 </Button>
         </Form>

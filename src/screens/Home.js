@@ -15,20 +15,27 @@ const Home = () => {
 
                 <div id="row">
                     <img src={company_icon} alt="logo" id="home-logo"></img>
-                    <p>Companies</p>
+                    <div>
+                    <h3>Companies</h3>
                     <p>Browse through companies to view personal reviews and ratings.</p>
+                    </div>
                 </div>
 
                 <div id="row">
                     <img src={job_icon} alt="logo" id="home-logo"></img>
-                    <p>Jobs</p>
+                    <div>
+                    <h3>Jobs</h3>
+                
                     <p>Search for jobs you're interested in to learn about their interview process, compensation, and other important aspects. </p>
                 </div>
-
+                </div>
                 <div id="row">
                     <img src={budget_icon} alt="logo" id="home-logo"></img>
-                    <p>Budget</p>
+                    <div>
+                    <h3>Budget</h3>
+                    <br/>
                     <p>Use our budgeting tool to compare cost of living with your potential salary and desired location.</p>
+                </div>
                 </div>
 
             </div>

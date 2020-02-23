@@ -26,14 +26,14 @@ const Welcome = () => {
               </NavLink>
 
               <NavLink to="/signin">
-                  <Button className='btn-flat' id="welc-btn">
+                  <Button className='btn-flat' id="signin-button">
                       Sign In
                   </Button>
               </NavLink>
 
               </div>
               <br></br>
-              <NavLink to="/home">Or, continue as guest</NavLink>
+              <NavLink id="guest" to="/home">Or, continue as guest</NavLink>
       </div>
   );
 }

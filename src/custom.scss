@@ -5,6 +5,8 @@ $theme-colors: (
 
 #button {
     color: white;
+    background-color: #f7a9a0;
+    border: none;
 }
 
 #signup {
@@ -56,7 +58,8 @@ $theme-colors: (
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
+    color: rgba(0, 0, 0, 0.705);
 }
 
 #column {
@@ -105,12 +108,26 @@ $theme-colors: (
 
 #signup-button {
     color: white;
+    background-color: #f7a9a0;
+    border: none;
     margin-right: 30px;
 }
 
 #signin-button {
     color: white;
+    background-color: #f7a9a0;
+    border: none;
     margin-left: 30px;
+}
+
+#submit-button {
+    color: white;
+    background-color: #f7a9a0;
+    border: none;
+}
+
+#guest {
+    color: #f7a9a0
 }
 
 // Import Bootstrap and its default variables
