@@ -11,10 +11,10 @@ import cities from '../data/cities'
 const Budget = () => {
 
     return (
-        <div class="details">
+        <>
+        <Navigation />
 
-            <Navigation />
-
+        <div id='text' class="details">
             <h1>Plan your budget</h1>
             <form>
                 <label>
@@ -31,6 +31,7 @@ const Budget = () => {
             </Button>
             <br></br>
         </div>
+        </>
     );
 }
 

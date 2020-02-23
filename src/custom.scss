@@ -115,10 +115,6 @@ $theme-colors: (
     padding-top: 30px;
 }
 
-.details {
-    text-align: center;
-}
-
 #row {
     display: flex;
     flex-direction: row;
@@ -283,6 +279,36 @@ $theme-colors: (
 
 #card img {
     width: 70%;
+}
+
+.details {
+    margin-left: 80px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.details input {
+    margin-left: 15px;
+}
+
+.details button {
+    margin-top: 30px;
+    border-color: white;
+    background-color: #f7a9a0;
+    color: white;
+}
+
+#drop {
+    display: flex;
+
+}
+
+#navlink {
+    color: #6A8EAE
+}
+
+#text {
+    color: rgba(0, 0, 0, 0.705);
 }
 
 #textarea
