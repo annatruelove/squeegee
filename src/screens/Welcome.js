@@ -33,7 +33,7 @@ const Welcome = () => {
 
               </div>
               <br></br>
-              <NavLink to="/details">Or, continue as guest</NavLink>
+              <NavLink to="/home">Or, continue as guest</NavLink>
       </div>
   );
 }
