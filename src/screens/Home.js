@@ -1,8 +1,6 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
 import '../App.css';
 import '../custom.scss';
-import { NavLink } from 'react-router-dom';
 import Navigation from './Navigation';
 import company_icon from '../company.svg';
 import job_icon from '../job.svg';

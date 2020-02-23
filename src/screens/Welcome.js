@@ -3,19 +3,24 @@ import Button from 'react-bootstrap/Button';
 import '../App.css';
 import '../custom.scss';
 import { NavLink } from 'react-router-dom';
-import Navigation from './Navigation';
+import squeegee from '../squeegee.png';
 
 const Welcome = () => {
   return (
-      <div>
-          <Navigation />
-
-          <p>Welcome to Squeegee!</p>
-
-          
-              <div class="welcome">
+      <div id="welcome-page">
+          <NavLink to="/">
+              <img src={squeegee} alt="logo" id="welcome-logo"></img>
+            </NavLink>
+            <br></br>
+            <div>
+            <h1>Welcome to Squeegee.</h1>
+            <h3>Your one stop shop for everything internship and entry-level. </h3>
+            <p>Find company reviews, program experiences, interview tips, pay ranges, budgeting tips, and more from fellow young adults. No paywall, <br/>no executive reviews, no BS. </p>
+            </div>
+              <div>
+                <br></br>
               <NavLink to="/signup">
-                  <Button className='btn-flat' id="welc-btn">
+                  <Button className='btn-flat' id="signup-button">
                       Sign Up
                   </Button>
               </NavLink>
@@ -27,7 +32,8 @@ const Welcome = () => {
               </NavLink>
 
               </div>
-
+              <br></br>
+              <NavLink to="/details">Or, continue as guest</NavLink>
       </div>
   );
 }

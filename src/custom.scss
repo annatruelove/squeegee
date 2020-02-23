@@ -3,18 +3,37 @@ $theme-colors: (
     'primary': #f7a9a0
 );
 
+#button {
+    color: white;
+}
+
+#signup {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    padding-top: 40px;
+}
+
 #nav-bar {
     display: flex;
-    justify-content: center;
-    background-color:#CCD0E8;
+    justify-content: space-between;
+    background-color:#bcbdc01f;
 }
 
 #welcome-search {
     width: 300px;
 }
 
-#nav-logo {
-    width:4%;
+#squeegee-logo {
+    width: 60px;
+}
+
+#search-logo {
+    width: 100px;
+}
+
+#user-logo {
+    width: 40px;
     align-content: right;
 }
 
@@ -23,9 +42,6 @@ $theme-colors: (
     padding-right: 20px;
 }
 
-p {
-    padding-right: 200px;
-}
 
 .home {
     padding-left: 30px;
@@ -43,14 +59,20 @@ p {
     padding-bottom: 30px;
 }
 
-#column{
+#column {
     display: flex;
     flex-direction: column;
+}
+
+#search-bar {
+    display: flex;
+    flex-direction: row;
 }
 
 #welc-btn {
     border-color: white;
     background-color: #f7a9a0;
+    color: white;
 }
 
 .welcome {
@@ -63,6 +85,32 @@ p {
 #dropdown-basic {
     border-color: white;
     background-color: #68aeae;
+}
+
+#welcome-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #bcbdc01f;
+    height: 100vh;
+    color: rgba(0, 0, 0, 0.705);
+}
+
+#welcome-logo {
+    width: 200px;
+    padding-top: 10vh;
+    // display: block;
+    // margin: auto;
+}
+
+#signup-button {
+    color: white;
+    margin-right: 30px;
+}
+
+#signin-button {
+    color: white;
+    margin-left: 30px;
 }
 
 // Import Bootstrap and its default variables
