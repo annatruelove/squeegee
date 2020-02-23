@@ -14,38 +14,37 @@ const Details = (props) => {
       };
 
     return (
-        <div class="details">
-
+<>
             <Navigation />
+            <div id='text' class="details">
 
             <h1>Complete your Profile</h1>
+            <br></br>
             <form onSubmit={e => handleForm(e)}>
-                <label>
+                <h3>
                     University Details
-                </label>
+                </h3>
                 
-                <p>Type:</p>
+                Type:
                 <DropDown items={["Public", "Private"]}/>
-
-                <p>Size:</p>
+<br></br>
+                Size:
                 <DropDown items={["Small (< 5,000)", "Medium (5,000-15,000)", "Large (> 15,000)"]}/>
-
-                <p>Region:</p>
+<br></br>
+                Region:
                 <DropDown items={["West", "Midwest", "South", "Northeast"]}/>
-
-                <p>Major:</p>
+<br></br>
+                Major:
                 <DropDown items={majors}/>
-
-                <label>
+<br></br>
+                <h3>
                     Personal Information
-                </label>
+                </h3>
                 
-                <p>Gender</p>
+                Gender:
                 <DropDown items={["Female", "Male", "Nonbinary", "Prefer not to say"]}/>
-
-                <label>
-                    Graduation Year
-                </label>
+<br></br>
+                Graduation Year:
                 <br></br>
                 <input type="number" placeholder="YYYY" min="2017" max="2100" />
                 <br></br>
@@ -55,10 +54,11 @@ const Details = (props) => {
             </form>
             
             <br></br>
-            <NavLink to="/home">
+            <NavLink id='guest' to="/home">
                     Skip for now
             </NavLink>
         </div>
+        </>
     );
 }
 
