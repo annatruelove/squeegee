@@ -16,6 +16,7 @@ import git_logo from '../githublogo.jpg';
 
 
 import '../App.css';
+import { NavLink } from 'react-router-dom';
 
 const Companies = () => {    
         return (   
@@ -25,7 +26,9 @@ const Companies = () => {
   <Card id="card">
     <Card.Img src={target_logo} />
     <Card.Body>
+    <NavLink to="/companyresult">
       <Card.Title>Target</Card.Title>
+      </NavLink>
       <Card.Text>
       Target Corporation is the 8th-largest retailer in the United States, and is a component of the S&P 500 Index.
       </Card.Text>
