@@ -7,7 +7,7 @@ import { app } from '../firebase.config';
 import AuthContext from '../App.css'
 
 
-const Signup = () => {    
+const Signup = (props) => {    
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setErrors] = useState("");
@@ -21,6 +21,7 @@ const Signup = () => {
         app.auth()
           .createUserWithEmailAndPassword(email, password)
           .then(res => {
+            props.history.push("details");
             if (res.user) Auth.setLoggedIn(true);
           })
           .catch(e => {
