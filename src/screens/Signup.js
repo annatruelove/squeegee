@@ -19,6 +19,12 @@ const Signup = (props) => {
           birthday : birthday
         });
       }
+    function readUserData () {
+        app.database().ref('users/' + app.auth().currentUser.uid).once('value')
+        .then(function(snapshot){
+            console.log(snapshot.val())}
+        );
+    }
 
     const Auth = useContext(AuthContext);
     const handleForm = e => {
@@ -27,7 +33,8 @@ const Signup = (props) => {
         app.auth()
           .createUserWithEmailAndPassword(email, password)
           .then(res => {
-            writeUserData(email, birthday)            
+            writeUserData(email, birthday)   
+            readUserData();         
             props.history.push("details");
             if (res.user) Auth.setLoggedIn(true);
           })
