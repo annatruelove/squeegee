@@ -4,6 +4,9 @@ import target_logo from '../target.png';
 import sas_logo from '../sas_logo.svg';
 import mass_logo from '../massmutual.jpg';
 import git_logo from '../githublogo.jpg';
+import { NavLink } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
+
 
 const SearchItem = (props) => {
     return (
@@ -13,6 +16,11 @@ const SearchItem = (props) => {
                 <a id="job-link" href='/companyresult'><h4>{props.title}</h4></a>
                 <h6>{props.company}</h6>
                 <p>Rating: 4.6/5.0</p>
+                <NavLink to='/review'>
+                <Button variant="primary" id="submit-button" type="submit">
+                    Leave a review
+                </Button>
+                </NavLink>
             </div>
         </div>
     )

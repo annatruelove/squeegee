@@ -3,6 +3,8 @@ import Navigation from './Navigation';
 import target_logo from '../target.png';
 import Button from 'react-bootstrap/Button';
 import next from '../next.svg'
+import { NavLink } from 'react-router-dom';
+
 
 const Review1 = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +27,9 @@ const Review1 = () => {
         <div id="review">
             <div>
             <div id="review-link" onClick={handleOnClick}>
+            <NavLink to="/exprofile">
             <h6>Anonymous Donut | Male • 2018 grad • Large public school</h6>
+            </NavLink>
             <div id='review2'>click for more<img src={next} id="arrow" alt="arrow"/></div>
             </div>
             {isOpen && moreInfo}
@@ -64,7 +68,7 @@ const Review2 = () => {
         <div id="review">
             <div>
             <div id="review-link" onClick={handleOnClick}>
-            <h6>Anonymous Donut | Female • 2018 grad • Large public school</h6>
+            <h6>Anonymous Gouda | Female • 2018 grad • Large public school</h6>
             <div id='review2'>click for more<img src={next} id="arrow" alt="arrow"/></div>
             </div>
             {isOpen && moreInfo}

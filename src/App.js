@@ -14,6 +14,9 @@ import SearchResults from './screens/SearchResults';
 import JobPage from './screens/JobPage';
 import Budget from './screens/Budget';
 import CompanyResult from './screens/CompanyResult';
+import ExProfile from './screens/ExProfile';
+import Review from './screens/Review';
+
 
 // Firebase App (the core Firebase SDK) is always required and
 // must be listed before other Firebase SDKs
@@ -46,6 +49,9 @@ const App = () => {
           <Route path='/jobs' component={ JobPage } />
           <Route path='/budget' component={ Budget } />
           <Route path='/companyresult' component={ CompanyResult } />
+          <Route path='/exprofile' component={ ExProfile } />
+          <Route path='/review' component={ Review } />
+
         </Switch>
       </BrowserRouter> 
       </>

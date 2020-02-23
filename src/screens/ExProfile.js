@@ -17,34 +17,14 @@ const Profile = () => {
     let size = "";
     let type = "";
 
-    // const readUserData = () => {        
-    //     app.database().ref('users/' + app.auth().currentUser.uid).once('value')
-    //     .then(function(snapshot){
-    //         console.log(snapshot.child('birthday').val());
-    //         console.log(snapshot.val().birthday);
-    //         age = snapshot.child('birthday').val();
-    //         email =  snapshot.child('email').val();
-    //         console.log(email);
-    //         gender = "";
-    //         graduationYear = 0;
-    //         major = "";
-    //         region = "";
-    //         size = "";
-    //         type = "";
-    //     });
-    // }
-
-    // readUserData();
-
-
     return (
         <div class="">
             <Navigation />
             <div id="row">
                 <img src={profile_icon} alt="logo" id="profile-logo"></img>
-                <p id="profile-text">Hello, anna@live.unc.edu </p>
+                <p id="profile-text">Anonymous Donut </p>
                 <div id="flex-end">
-                    <Button id="prof-btn">Check Messages</Button>
+                    <Button id="prof-btn">Send Message</Button>
                 </div>
             </div>
 
@@ -55,8 +35,8 @@ const Profile = () => {
                 <div id="row2">
                     <div id="col">
                         <p>Age: 22</p>
-                        <p>Gender: Female</p>
-                        <p>Graduation Year: 2020</p>
+                        <p>Gender: Male</p>
+                        <p>Graduation Year: 2018</p>
                         <p>Major: Computer Science</p>
                     </div>
                     <div id="col">
@@ -64,6 +44,7 @@ const Profile = () => {
                         <p>Region: South</p>
                         <p>Size: Large (> 15,000)</p>
                         <p>Type: Public</p>
+                        <p>Location: Chicago, IL</p>
                     </div>
 
 
