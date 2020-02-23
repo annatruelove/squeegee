@@ -1,6 +1,6 @@
 // Override default variables before the import
 $theme-colors: (
-    'primary': purple
+    'primary': #f7a9a0
 );
 
 #nav-bar {
@@ -32,6 +32,10 @@ p {
     padding-top: 30px;
 }
 
+.details {
+    text-align: center;
+}
+
 #row {
     display: flex;
     flex-direction: row;
@@ -54,6 +58,11 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#dropdown-basic {
+    border-color: white;
+    background-color: #68aeae;
 }
 
 // Import Bootstrap and its default variables

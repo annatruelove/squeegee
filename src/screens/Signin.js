@@ -22,7 +22,7 @@ const Signin = () => {
             <Form.Control type="password" placeholder="Password" />
           </Form.Group>
           <Button variant="primary" type="submit">
-            Submit
+            Sign In
           </Button>
         </Form>
         );

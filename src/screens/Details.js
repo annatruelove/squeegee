@@ -1,87 +1,61 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Dropdown from 'react-bootstrap/Dropdown';
+import DropDown from './DropDown';
 import '../App.css';
+import { NavLink } from 'react-router-dom';
 import majors from '../data/majors'
-
-const Details = () => {    
-
-    const items = [];
-    for (const i of majors){
-        items.push(<Dropdown.Item href="#/action-1">{i}</Dropdown.Item>)
-    }
+import Navigation from './Navigation';
 
 
-        return (      
+const Details = () => {
+
+    return (
+        <div class="details">
+
+            <Navigation />
+
+            <h1>Complete your Profile</h1>
             <form>
                 <label>
                     University Details
-                </label>   
-                <Dropdown>
-                    <Dropdown.Toggle variant="success" id="dropdown-basic">
-                        Type
-                    </Dropdown.Toggle>
+                </label>
+                
+                <p>Type:</p>
+                <DropDown items={["Public", "Private"]}/>
 
-                    <Dropdown.Menu>
-                        <Dropdown.Item href="#/action-1">Public</Dropdown.Item>
-                        <Dropdown.Item href="#/action-2">Private</Dropdown.Item>
-                    </Dropdown.Menu>
-                </Dropdown>
-                <Dropdown>
-                    <Dropdown.Toggle variant="success" id="dropdown-basic">
-                        Size
-                    </Dropdown.Toggle>
+                <p>Size:</p>
+                <DropDown items={["Small (< 5,000)", "Medium (5,000-15,000)", "Large (&gt; 15,000)"]}/>
 
-                    <Dropdown.Menu>
-                        <Dropdown.Item href="#/action-1">Small (&lt; 5,000)</Dropdown.Item>
-                        <Dropdown.Item href="#/action-2">Medium (5,000-15,000)</Dropdown.Item>
-                        <Dropdown.Item href="#/action-3">Large (&gt; 15,000)</Dropdown.Item>
+                <p>Region:</p>
+                <DropDown items={["West", "Midwest", "South", "Northeast"]}/>
 
-                    </Dropdown.Menu>
-                </Dropdown>
-                <Dropdown>
-                    <Dropdown.Toggle variant="success" id="dropdown-basic">
-                        Region
-                    </Dropdown.Toggle>
+                <p>Major:</p>
+                <DropDown items={majors}/>
 
-                    <Dropdown.Menu>
-                        <Dropdown.Item href="#/action-1">West</Dropdown.Item>
-                        <Dropdown.Item href="#/action-2">Midwest</Dropdown.Item>
-                        <Dropdown.Item href="#/action-3">South</Dropdown.Item>
-                        <Dropdown.Item href="#/action-4">Northeast</Dropdown.Item>
-                    </Dropdown.Menu>
-                </Dropdown>
-                <Dropdown>
-                    <Dropdown.Toggle variant="success" id="dropdown-basic">
-                        Major
-                    </Dropdown.Toggle>
-
-                    <Dropdown.Menu>
-                        {items}
-                    </Dropdown.Menu>
-                </Dropdown>
                 <label>
                     Personal Information
-                </label> 
-                <Dropdown>
-                    <Dropdown.Toggle variant="success" id="dropdown-basic">
-                        Gender
-                    </Dropdown.Toggle>
+                </label>
+                
+                <p>Gender</p>
+                <DropDown items={["Female", "Male", "Nonbinary", "Prefer not to say"]}/>
 
-                    <Dropdown.Menu>
-                        <Dropdown.Item href="#/action-1">Female</Dropdown.Item>
-                        <Dropdown.Item href="#/action-2">Male</Dropdown.Item>
-                        <Dropdown.Item href="#/action-2">Non-binary</Dropdown.Item>
-                        <Dropdown.Item href="#/action-2">Prefer not to answer</Dropdown.Item>
-                    </Dropdown.Menu>
-                </Dropdown>
                 <label>
                     Graduation Year
                 </label>
+                <br></br>
                 <input type="number" placeholder="YYYY" min="2017" max="2100" />
 
             </form>
-        );
-  }
+            <Button variant="primary" type="submit">
+                Update Profile
+            </Button>
+            <br></br>
+            <NavLink to="/home">
+                    Skip for now
+            </NavLink>
+        </div>
+    );
+}
 
 export default Details;

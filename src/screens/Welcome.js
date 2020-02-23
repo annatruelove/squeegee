@@ -20,7 +20,7 @@ const Welcome = () => {
                   </Button>
               </NavLink>
 
-              <NavLink to="/details">
+              <NavLink to="/signin">
                   <Button className='btn-flat' id="welc-btn">
                       Sign In
                   </Button>
