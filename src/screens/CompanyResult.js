@@ -26,13 +26,13 @@ const Review1 = () => {
     return (
         <div id="review">
             <div>
-            <div id="review-link" onClick={handleOnClick}>
-            <NavLink to="/exprofile">
-            <h6>Anonymous Donut | Male • 2018 grad • Large public school</h6>
-            </NavLink>
-            <div id='review2'>click for more<img src={next} id="arrow" alt="arrow"/></div>
-            </div>
-            {isOpen && moreInfo}
+                <div id="review-link" onClick={handleOnClick}>
+                    <NavLink to="/exprofile">
+                        <h6>Anonymous Donut | Male • 2018 grad • Large public school</h6>
+                    </NavLink>
+                    <div id='review2'>click for more<img src={next} id="arrow" alt="arrow" /></div>
+                </div>
+                {isOpen && moreInfo}
             </div>
             <h6>Great experience, even better team</h6>
             <h6>Rating: 4.5/5</h6>
@@ -67,11 +67,11 @@ const Review2 = () => {
     return (
         <div id="review">
             <div>
-            <div id="review-link" onClick={handleOnClick}>
-            <h6>Anonymous Gouda | Female • 2018 grad • Large public school</h6>
-            <div id='review2'>click for more<img src={next} id="arrow" alt="arrow"/></div>
-            </div>
-            {isOpen && moreInfo}
+                <div id="review-link" onClick={handleOnClick}>
+                    <h6>Anonymous Gouda | Female • 2018 grad • Large public school</h6>
+                    <div id='review2'>click for more<img src={next} id="arrow" alt="arrow" /></div>
+                </div>
+                {isOpen && moreInfo}
             </div>
             <h6>Manager wouldn't meet with me</h6>
             <h6>Rating: 2/5</h6>
@@ -89,33 +89,36 @@ const Review2 = () => {
 const CompanyResult = () => {
     return (
         <>
-        <Navigation />
-        <div id="company-page">
-            <div>
-            <img src={target_logo} alt='target logo'/>
-            </div>
-            <div>
-            <h2>UX Engineer</h2>
-            <h4>Target</h4>
-            <h6>Minneapolis, Minnesota area</h6>
-            <h6>Entry level position</h6>
-            <p>We’re seeking a passionate, creative, self-starting, get-it-done UX Engineer. You will work side-by-side with world class Designers and Software Engineers to help preserve design integrity throughout the product development lifecycle.
+            <Navigation />
+            <div id="company-page">
+                <div>
+                    <img src={target_logo} alt='target logo' />
+                </div>
+                <div>
+                    <h2>UX Engineer</h2>
+                    <h4>Target</h4>
+                    <h6>Minneapolis, Minnesota area</h6>
+                    <h6>Entry level position</h6>
+                    <p>We’re seeking a passionate, creative, self-starting, get-it-done UX Engineer. You will work side-by-side with world class Designers and Software Engineers to help preserve design integrity throughout the product development lifecycle.
+        
+                     <br /><br />
 
-  <br/><br/>
+                    We’re looking for a results-oriented collaborator who is a nimble engineer with keen design sensibilities. You have experience interpreting designs into fully functional interactive experiences, and do the job quickly and efficiently. You work in and with new technologies, and can quickly and smoothly learn to use new tools. You must “get” designers and have a clear understanding of the design process—interaction design, usability, visual design, and motion graphics—and demonstrate an ability to merge this with established development processes. You will also help establish new processes and tools within the studio that will evolve the way we design and build products.
+                        
+                </p>        
+                    <Button variant="primary" id="submit-button" type="submit">
+                        Leave a review
+                    </Button>
+                <div id="reviews">
+                    <br></br>
+                    <h3>Reviews (Avg. 3.3/5)</h3>
+                    <h5>Hear from people like you.</h5>
+                    <Review1 />
+                    <Review2 />
+                </div>
+                </div>
 
-We’re looking for a results-oriented collaborator who is a nimble engineer with keen design sensibilities. You have experience interpreting designs into fully functional interactive experiences, and do the job quickly and efficiently. You work in and with new technologies, and can quickly and smoothly learn to use new tools. You must “get” designers and have a clear understanding of the design process—interaction design, usability, visual design, and motion graphics—and demonstrate an ability to merge this with established development processes. You will also help establish new processes and tools within the studio that will evolve the way we design and build products.  
-
-</p>
-<div id="reviews">
-    <br></br>
-                <h3>Reviews (Avg. 3.3/5)</h3>
-                <h5>Hear from people like you.</h5>
-                <Review1 />
-                <Review2 />
             </div>
-            </div>
-            
-        </div>
 
         </>
     );
