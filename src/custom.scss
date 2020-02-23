@@ -141,5 +141,34 @@ $theme-colors: (
     color: #f7a9a0
 }
 
+#search-item {
+    display: flex;
+    flex-direction: row;
+    background-color: #bcbdc01f;
+    margin: 10px;
+}
+
+#search-results {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 10px;
+    color: rgba(0, 0, 0, 0.705);
+}
+
+#search-img {
+    width: 150px;
+}
+
+#search-text {
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+#job-link a {
+    color: "#6A8EAE"
+}
+
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';
