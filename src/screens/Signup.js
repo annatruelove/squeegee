@@ -16,7 +16,13 @@ const Signup = (props) => {
     function writeUserData(email, birthday) {
         app.database().ref('users/' + app.auth().currentUser.uid).set({
           email: email,
-          birthday : birthday
+          birthday : birthday,
+          type: "public",
+          size: "large",
+          region: "south",
+          major: "Computer Science", 
+          gender: "female",
+          graduationYear: 2020
         });
       }
     function readUserData () {
