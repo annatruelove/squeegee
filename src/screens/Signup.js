@@ -32,6 +32,7 @@ const Signup = () => {
       return (    
         <>  
         <Navigation />
+<<<<<<< HEAD
         <Form onSubmit={e => handleForm(e)}>
             <Form.Group controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
@@ -44,6 +45,27 @@ const Signup = () => {
             <Form.Group controlId="formBirthday">
                 <Form.Label>Birthday</Form.Label>
                 <Form.Control type="date" /> 
+=======
+        <Form id="signup">
+            <Form.Label>
+                We need some basic information from you to set up your profile. Your identity while using Squeegee is anonymous. 
+            </Form.Label>
+            <br></br>
+            <Form.Group controlId="formBasicEmail">
+            <Form.Label>Email address</Form.Label>
+            <Form.Control type="email" placeholder="Enter email" />
+            <Form.Text>We'll never share your email with anyone else. </Form.Text>
+            </Form.Group>
+            <Form.Group controlId="formBasicPassword">
+                <Form.Label>Password</Form.Label>
+                <Form.Control type="password" placeholder="Password" />
+                <Form.Text>You'll use this to log back in. </Form.Text>
+            </Form.Group>
+            <Form.Group controlId="formBirthday">
+                <Form.Label>Birthday</Form.Label>
+                <Form.Control type="date"/> 
+                <Form.Text>We need this to verify your submissions.</Form.Text>
+>>>>>>> d55b3a345f4b1462e9f2981c374303d8ae3292c8
             </Form.Group>
             
                 <Button variant="primary" type="submit">
