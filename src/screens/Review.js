@@ -11,9 +11,10 @@ import cities from '../data/cities'
 const Review = () => {
 
     return (
-        
+        <>
+        <Navigation />
         <div class='details'>
-            <Navigation />
+            
 
             <h1>Leave a review!</h1>
             <form>
@@ -42,6 +43,7 @@ const Review = () => {
             </NavLink>
             <br></br>
             </div>
+            </>
     );
 }
 
