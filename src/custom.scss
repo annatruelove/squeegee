@@ -35,7 +35,7 @@ $theme-colors: (
 
 #profile-text {
     font-size: 30px;
-    padding-left: 30px;
+    padding-left: 50px;
     padding-top: 30px;
 }
 
@@ -45,10 +45,46 @@ $theme-colors: (
     padding-top: 10px;
 }
 
+#prof-btn {
+    border-color: white;
+    background-color: #f7a9a0;
+    color: white;
+}
+
+#bold {
+    font-weight: bold;
+}
+
+#col {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+#row2{
+    display: flex;
+    flex-direction: row;
+}
+
+#flex-end {
+    padding-left: 500px;
+    padding-top: 30px;
+}
+
 #nav-bar {
     display: flex;
     justify-content: space-between;
-    background-color:#bcbdc01f;
+    align-items: center;
+    background-color: rgb(221, 223, 237);
+}
+
+#nav-text {
+    color: #507391;
+    font-size: 20px;
+    padding-top:15px;
+
 }
 
 #welcome-search {

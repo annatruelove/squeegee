@@ -9,7 +9,7 @@ import { app } from '../firebase.config';
 const Profile = () => {
 
     var age = 0;
-    var email =  "";
+    var email = "";
     let gender = ""
     let graduationYear = 0;
     let major = "";
@@ -43,27 +43,33 @@ const Profile = () => {
             <div id="row">
                 <img src={profile_icon} alt="logo" id="profile-logo"></img>
                 <p id="profile-text">Hello, anna@live.unc.edu </p>
+                <div id="flex-end">
+                    <Button id="prof-btn">Check Messages</Button>
+                </div>
             </div>
 
             <p id="profile-text">User Profile Information:</p>
 
             <div id="profile-body">
 
-            <p>Age: 22</p>
-            <p>Gender: Female</p>
-            <p>Graduation Year: 2020</p>
-            <p>Major: Computer Science</p>
-            <p>University Details</p>
-            <p>Region: South</p>
-            <p>Size: Large (> 15,000)</p>
-            <p>Type: Public</p>
+                <div id="row2">
+                    <div id="col">
+                        <p>Age: 22</p>
+                        <p>Gender: Female</p>
+                        <p>Graduation Year: 2020</p>
+                        <p>Major: Computer Science</p>
+                    </div>
+                    <div id="col">
+                        <p id="bold">University Details</p>
+                        <p>Region: South</p>
+                        <p>Size: Large (> 15,000)</p>
+                        <p>Type: Public</p>
+                    </div>
+
+
+                </div>
 
             </div>
-
-
-
-
-
 
         </div>
     );
