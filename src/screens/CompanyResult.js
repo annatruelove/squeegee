@@ -31,6 +31,7 @@ const Review1 = () => {
             {isOpen && moreInfo}
             </div>
             <h6>Great experience, even better team</h6>
+            <h6>Rating: 4.5/5</h6>
             <div>
             </div>
             <p>I thoroughly enjoyed my experience as an entry-level UX engineer. I never felt like I was just a newbie, I was always part of the entire team! I would highly recommend for anyone interested in user experience or user design.  </p>
@@ -69,6 +70,7 @@ const Review2 = () => {
             {isOpen && moreInfo}
             </div>
             <h6>Manager wouldn't meet with me</h6>
+            <h6>Rating: 2/5</h6>
             <div>
             </div>
             <p>My manager would only meet with the other intern on my team, and repeatedly denied my requests for more regular one-on-one meetings. I often was confused about what was expected of me and spent a lot of time working in circles. I wouldn't recommend joining Target on my team.</p>
@@ -102,7 +104,7 @@ We’re looking for a results-oriented collaborator who is a nimble engineer wit
 </p>
 <div id="reviews">
     <br></br>
-                <h3>Reviews</h3>
+                <h3>Reviews (Avg. 3.3/5)</h3>
                 <h5>Hear from people like you.</h5>
                 <Review1 />
                 <Review2 />
