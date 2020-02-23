@@ -51,7 +51,6 @@ const App = () => {
           <Route path='/companyresult' component={ CompanyResult } />
           <Route path='/exprofile' component={ ExProfile } />
           <Route path='/review' component={ Review } />
-
         </Switch>
       </BrowserRouter> 
       </>
