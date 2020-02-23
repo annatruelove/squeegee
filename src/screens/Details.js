@@ -7,7 +7,11 @@ import majors from '../data/majors'
 import Navigation from './Navigation';
 
 
-const Details = () => {
+const Details = (props) => {
+    const handleForm = e => {
+        e.preventDefault();
+        props.history.push("home");
+      };
 
     return (
         <div class="details">
@@ -15,7 +19,7 @@ const Details = () => {
             <Navigation />
 
             <h1>Complete your Profile</h1>
-            <form>
+            <form onSubmit={e => handleForm(e)}>
                 <label>
                     University Details
                 </label>
@@ -44,11 +48,12 @@ const Details = () => {
                 </label>
                 <br></br>
                 <input type="number" placeholder="YYYY" min="2017" max="2100" />
-
-            </form>
+                <br></br>
             <Button variant="primary" type="submit">
                 Update Profile
             </Button>
+            </form>
+            
             <br></br>
             <NavLink to="/home">
                     Skip for now
