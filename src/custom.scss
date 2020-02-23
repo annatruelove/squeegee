@@ -42,9 +42,6 @@ $theme-colors: (
     padding-right: 20px;
 }
 
-p {
-    padding-right: 200px;
-}
 
 .home {
     padding-left: 30px;
@@ -79,6 +76,32 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#welcome-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #bcbdc01f;
+    height: 100vh;
+    color: rgba(0, 0, 0, 0.705);
+}
+
+#welcome-logo {
+    width: 200px;
+    padding-top: 10vh;
+    // display: block;
+    // margin: auto;
+}
+
+#signup-button {
+    color: white;
+    margin-right: 30px;
+}
+
+#signin-button {
+    color: white;
+    margin-left: 30px;
 }
 
 // Import Bootstrap and its default variables

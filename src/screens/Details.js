@@ -2,6 +2,7 @@ import React from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
 import '../App.css';
 import majors from '../data/majors'
+import Navigation from './Navigation'
 
 const Details = () => {    
 
@@ -10,8 +11,9 @@ const Details = () => {
         items.push(<Dropdown.Item href="#/action-1">{i}</Dropdown.Item>)
     }
 
-
-        return (      
+        return (    
+            <>
+            <Navigation />  
             <form>
                 <label>
                     University Details
@@ -80,6 +82,7 @@ const Details = () => {
                 <input type="number" placeholder="YYYY" min="2017" max="2100" />
 
             </form>
+            </>
         );
   }
 

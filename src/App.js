@@ -9,7 +9,6 @@ import Signup from './screens/Signup';
 import * as firebase from 'firebase';
 import Signin from './screens/Signin';
 import Companies from './screens/Companies';
-import firebaseConfig from './firebase.config'
 
 // Firebase App (the core Firebase SDK) is always required and
 // must be listed before other Firebase SDKs
