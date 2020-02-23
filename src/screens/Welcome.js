@@ -11,7 +11,6 @@ const Welcome = () => {
           <Navigation />
 
           <p>Welcome to Squeegee!</p>
-
           
               <div class="welcome">
               <NavLink to="/signup">
