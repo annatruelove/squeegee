@@ -21,6 +21,7 @@ const JobPage = () => {
     return (
         <>
         <Navigation/>
+        <p id="profile-text"> Explore Jobs</p>
         <div id="search-results">
         <SearchItem src={ux_logo} title="UX Engineering" company="Target" salary="$65,000" gender="female" location="Minneapolis, Minnesota" age="21"></SearchItem>
         <SearchItem src={swe_logo} title="Software Engineering" company="SAS" salary="$70,000" gender="male" location="Raleigh, Durham" age="22"></SearchItem>
