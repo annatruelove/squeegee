@@ -27,6 +27,17 @@ $theme-colors: (
     padding-top: 40px;
 }
 
+#profile-logo {
+    width: 170px;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+#profile-text {
+    font-size: 30px;
+    padding-left: 30px;
+}
+
 #nav-bar {
     display: flex;
     justify-content: space-between;
