@@ -7,7 +7,7 @@ import { app } from '../firebase.config';
 import AuthContext from '../App.css'
 
 
-const Signup = () => {    
+const Signup = (props) => {    
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setErrors] = useState("");
@@ -21,6 +21,7 @@ const Signup = () => {
         app.auth()
           .createUserWithEmailAndPassword(email, password)
           .then(res => {
+            props.history.push("details");
             if (res.user) Auth.setLoggedIn(true);
           })
           .catch(e => {
@@ -31,10 +32,11 @@ const Signup = () => {
       return (    
         <>  
         <Navigation />
-        <Form id="signup" onSubmit={e => handleForm(e)}>
+        <Form id="form" onSubmit={e => handleForm(e)}>
             <Form.Label>
                 We need some basic information from you to set up your profile. Your identity while using Squeegee is anonymous. 
             </Form.Label>
+            <div id="signup">
             <br></br>
             <Form.Group controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
@@ -55,6 +57,8 @@ const Signup = () => {
                 <Button variant="primary" id="submit-button" type="submit">
                     Submit
                 </Button>
+
+                </div>
         </Form>
         </>
     );

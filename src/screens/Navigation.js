@@ -12,7 +12,9 @@ const Navigation = () => {
               <div id='search-bar'>
                 <form class="form-inline my-2 my-lg-0" >
                     <input class="form-control mr-sm-2" id="welcome-search" type="search" placeholder="🔍 Search Jobs or Companies" aria-label="Search"></input>
-                    <button class="btn btn-primary my-2 my-sm-0" id="button" type="submit">Search</button>
+                    <NavLink to='/results'>
+                      <button class="btn btn-primary my-2 my-sm-0" id="button" type="submit">Search</button>
+                      </NavLink>
                 </form>
               </div>
               <NavLink to="/profile">
