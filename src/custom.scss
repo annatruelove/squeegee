@@ -186,6 +186,7 @@ $theme-colors: (
 }
 
 #submit-button {
+    margin-bottom: 20px;
     color: white;
     background-color: #f7a9a0;
     border: none;
@@ -282,6 +283,13 @@ $theme-colors: (
 
 #card img {
     width: 70%;
+}
+
+#textarea
+{
+  width:60%;
+  box-sizing:border-box;
+  
 }
 
 
