@@ -106,9 +106,11 @@ const CompanyResult = () => {
                     We’re looking for a results-oriented collaborator who is a nimble engineer with keen design sensibilities. You have experience interpreting designs into fully functional interactive experiences, and do the job quickly and efficiently. You work in and with new technologies, and can quickly and smoothly learn to use new tools. You must “get” designers and have a clear understanding of the design process—interaction design, usability, visual design, and motion graphics—and demonstrate an ability to merge this with established development processes. You will also help establish new processes and tools within the studio that will evolve the way we design and build products.
                         
                 </p>        
+                <NavLink to="/review">
                     <Button variant="primary" id="submit-button" type="submit">
                         Leave a review
                     </Button>
+                    </NavLink>
                 <div id="reviews">
                     <br></br>
                     <h3>Reviews (Avg. 3.3/5)</h3>
