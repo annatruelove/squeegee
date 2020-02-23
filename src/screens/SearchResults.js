@@ -10,7 +10,7 @@ const SearchItem = (props) => {
         <div id="search-item">
             <img id={"search-img"} src={props.src} alt="company img" />
             <div id="search-text">
-                <a id="job-link" href='/'><h4>{props.title}</h4></a>
+                <a id="job-link" href='/companyresult'><h4>{props.title}</h4></a>
                 <h6>{props.company}</h6>
                 <p>Rating: 4.6/5.0</p>
             </div>

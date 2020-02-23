@@ -188,5 +188,66 @@ $theme-colors: (
     color: "#6A8EAE"
 }
 
+#company-page {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    color: rgba(0, 0, 0, 0.705);
+
+}
+
+#review {
+    background-color: #bcbdc01f;
+    border: 2px solid #bcbdc054;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+
+#review2 {
+    display: flex;
+    flex-direction: row;
+}
+
+#review-link {
+    background-color: #bcbdc04f;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+#review-link:hover {
+    background-color: #bcbdc01f;
+}
+
+#arrow {
+    width: 15px;
+    margin-left: 30px;
+    margin-bottom: 4px;
+}
+
+#more {
+    background-color: #bcbdc04f;
+    border: 3px solid #bcbdc002;
+}
+
+#card {
+    margin-left: 90px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display:flex;
+    align-items: center;
+}
+
+#footer {
+    width: 100%;
+}
+
+#card img {
+    width: 70%;
+}
+
+
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';
