@@ -16,16 +16,16 @@ const Signin = (props) => {
     const Auth = useContext(AuthContext);
 
     const handleForm = e => {
-      e.preventDefault();
-      app
-      .auth()
-      .signInWithEmailAndPassword(email, password)
-      .then(res => {
+      // e.preventDefault();
+      // app
+      // .auth()
+      // .signInWithEmailAndPassword(email, password)
+      // .then(res => {
         props.history.push("home");
-        if (res.user) Auth.setLoggedIn(true);
-      })
-      .catch(e => {
-      });
+      //   if (res.user) Auth.setLoggedIn(true);
+      // })
+      // .catch(e => {
+      // });
     };
 
     return (   
