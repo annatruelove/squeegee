@@ -24,7 +24,7 @@ const Details = () => {
                 <DropDown items={["Public", "Private"]}/>
 
                 <p>Size:</p>
-                <DropDown items={["Small (< 5,000)", "Medium (5,000-15,000)", "Large (&gt; 15,000)"]}/>
+                <DropDown items={["Small (< 5,000)", "Medium (5,000-15,000)", "Large (> 15,000)"]}/>
 
                 <p>Region:</p>
                 <DropDown items={["West", "Midwest", "South", "Northeast"]}/>

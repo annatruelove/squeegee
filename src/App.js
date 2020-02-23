@@ -9,6 +9,7 @@ import Signup from './screens/Signup';
 import * as firebase from 'firebase';
 import Signin from './screens/Signin';
 import Companies from './screens/Companies';
+import Profile from './screens/Profile';
 import SearchResults from './screens/SearchResults';
 import JobPage from './screens/JobPage';
 
@@ -39,6 +40,7 @@ const App = () => {
           <Route path='/signup' component={ Signup } />
           <Route path='/signin' component={ Signin } />
           <Route path='/companies' component={ Companies } />
+          <Route path='/profile' component={ Profile } />
           <Route path='/results' component={ SearchResults } />
           <Route path='/jobs' component={ JobPage } />
 

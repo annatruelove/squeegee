@@ -17,7 +17,9 @@ const Navigation = () => {
                       </NavLink>
                 </form>
               </div>
-              <img src={profile_icon} alt="logo" id="user-logo"></img>
+              <NavLink to="/profile">
+                <img src={profile_icon} alt="logo" id="user-logo"></img>
+              </NavLink>
 
           </nav>
     )

@@ -10,17 +10,24 @@ import AuthContext from '../App.css'
 const Signup = (props) => {    
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [birthday, setBirthday] = useState("");
     const [error, setErrors] = useState("");
+
+    function writeUserData(email, birthday) {
+        app.database().ref('users/' + app.auth().currentUser.uid).set({
+          email: email,
+          birthday : birthday
+        });
+      }
 
     const Auth = useContext(AuthContext);
     const handleForm = e => {
-        console.log(email);
-        console.log(password);
         e.preventDefault();
         console.log(app);
         app.auth()
           .createUserWithEmailAndPassword(email, password)
           .then(res => {
+            writeUserData(email, birthday)            
             props.history.push("details");
             if (res.user) Auth.setLoggedIn(true);
           })
@@ -50,7 +57,7 @@ const Signup = (props) => {
             </Form.Group>
             <Form.Group controlId="formBirthday">
                 <Form.Label>Birthday</Form.Label>
-                <Form.Control type="date"/> 
+                <Form.Control type="date" onChange={e => setBirthday(e.target.value)}/> 
                 <Form.Text className="text-muted">We need this to verify your submissions.</Form.Text>
             </Form.Group>
             
