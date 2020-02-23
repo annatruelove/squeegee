@@ -15,7 +15,9 @@ const Navigation = () => {
                     <button class="btn btn-primary my-2 my-sm-0" id="button" type="submit">Search</button>
                 </form>
               </div>
-              <img src={profile_icon} alt="logo" id="user-logo"></img>
+              <NavLink to="/profile">
+                <img src={profile_icon} alt="logo" id="user-logo"></img>
+              </NavLink>
 
           </nav>
     )

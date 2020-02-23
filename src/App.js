@@ -9,6 +9,7 @@ import Signup from './screens/Signup';
 import * as firebase from 'firebase';
 import Signin from './screens/Signin';
 import Companies from './screens/Companies';
+import Profile from './screens/Profile';
 
 // Firebase App (the core Firebase SDK) is always required and
 // must be listed before other Firebase SDKs
@@ -36,6 +37,7 @@ const App = () => {
           <Route path='/signup' component={ Signup } />
           <Route path='/signin' component={ Signin } />
           <Route path='/companies' component={ Companies } />
+          <Route path='/profile' component={ Profile } />
         </Switch>
       </BrowserRouter> 
       </>
