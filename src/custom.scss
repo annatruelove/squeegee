@@ -10,9 +10,20 @@ $theme-colors: (
 }
 
 #signup {
-    padding-left: 100px;
+    width: 45%;
     padding-right: 100px;
     padding-bottom: 100px;
+}
+
+#form {
+    padding-left: 100px;
+    padding-top: 40px;
+}
+
+#signin-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-top: 40px;
 }
 
