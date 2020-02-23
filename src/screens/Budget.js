@@ -27,7 +27,7 @@ const Budget = () => {
                 
             </form>
             <Button variant="primary" type="submit">
-                Caculate
+                Calculate
             </Button>
             <br></br>
         </div>
